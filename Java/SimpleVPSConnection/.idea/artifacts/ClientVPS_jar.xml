@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ClientVPS:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ClientVPS_jar</output-path>
+    <root id="archive" name="ClientVPS.jar">
+      <element id="module-output" name="ClientVPS" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ESPClient</string>
+    <string name="steruj_led">Steruj LED</string>
+    <string name="pobierz_dane">Pobierz dane</string>
+    <string name="steruj_dioda">steruj diodą</string>
+    <string name="wybierz_kolor">wybierz kolor</string>
+    <string name="blue">BLUE</string>
+    <string name="green">GREEN</string>
+    <string name="red">RED</string>
+    <string name="powr_t">Powrót</string>
+</resources>

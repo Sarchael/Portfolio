@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firmakurierska.TracePackageController">
+   <children>
+      <Label alignment="CENTER" layoutX="154.0" layoutY="83.0" prefHeight="23.0" prefWidth="654.0" text="Podaj numer paczki aby ją wyszukać." textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Times New Roman Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="packageNumber" alignment="CENTER" layoutX="368.0" layoutY="155.0" promptText="Numer paczki">
+         <font>
+            <Font name="Times New Roman Italic" size="20.0" />
+         </font>
+      </TextField>
+      <Button layoutX="381.0" layoutY="230.0" mnemonicParsing="false" onAction="#traceYourPackage" prefHeight="50.0" prefWidth="200.0" text="Śledź paczkę">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="statusID" layoutX="288.0" layoutY="431.0" text="Status:" visible="false">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeField" alignment="CENTER" layoutX="368.0" layoutY="358.0" prefWidth="300.0">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="statusField" alignment="CENTER" layoutX="368.0" layoutY="431.0" prefWidth="300.0">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeID" layoutX="294.0" layoutY="358.0" text="Czas:" visible="false">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorMessage" alignment="CENTER" layoutX="331.0" layoutY="400.0" prefWidth="300.0" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

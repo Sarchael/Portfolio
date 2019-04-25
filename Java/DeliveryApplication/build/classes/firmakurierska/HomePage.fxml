@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firmakurierska.HomePageController">
+   <children>
+      <HBox layoutY="109.0" prefHeight="100.0" prefWidth="960.0">
+         <children>
+            <ImageView fx:id="first" fitHeight="128.0" fitWidth="128.0" onMouseExited="#clearMessage" onMouseMoved="#messageOne" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@shopping-cart.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="30.0" right="13.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="second" fitHeight="160.0" fitWidth="128.0" onMouseExited="#clearMessage" onMouseMoved="#messageTwo" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@box%20(1).png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="13.0" right="13.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="third" fitHeight="160.0" fitWidth="128.0" onMouseExited="#clearMessage" onMouseMoved="#messageThree" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@computer.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="13.0" right="13.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="fourth" fitHeight="160.0" fitWidth="128.0" onMouseExited="#clearMessage" onMouseMoved="#messageFour" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@courier.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="13.0" right="13.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="fifth" fitHeight="160.0" fitWidth="128.0" onMouseExited="#clearMessage" onMouseMoved="#messageFive" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@stopwatch.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="13.0" right="13.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="sixth" fitHeight="160.0" fitWidth="128.0" onMouseExited="#clearMessage" onMouseMoved="#messageSix" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@delivery-man.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="13.0" right="26.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <Label fx:id="textField" alignment="CENTER" layoutX="55.0" layoutY="341.0" prefHeight="200.0" prefWidth="850.0" text="Witamy w aplikacji Naszej firmy kurierskiej! Najedź na powyższe obrazki aby dowiedzieć się jak nadać swoją paczkę." textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Times New Roman Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

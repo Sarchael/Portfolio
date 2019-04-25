@@ -1,0 +1,8 @@
+[project]
+mcu=atmega16a
+f_cpu=8000000
+[MkVersion]
+BuildVersion=1.0.0
+BuildNumber=100
+BuildTime=23:31:54
+BuildDate=17.02.2019

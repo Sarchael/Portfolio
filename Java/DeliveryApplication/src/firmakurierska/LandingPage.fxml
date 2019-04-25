@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firmakurierska.LandingPageController">
+   <children>
+      <HBox layoutX="105.0" layoutY="53.0" prefHeight="150.0" prefWidth="750.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@courier.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="150.0" prefWidth="600.0" text="Witaj w panelu użytkownika. Dla ułatwienia powiem Ci co możesz teraz zrobić!" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Times New Roman Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="105.0" layoutY="252.0" prefHeight="300.0" prefWidth="750.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="300.0" prefWidth="250.0">
+               <children>
+                  <ImageView fx:id="imageOne" fitHeight="150.0" fitWidth="150.0" onMouseExited="#clearMessages" onMouseMoved="#messageOne" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@box%20(2).png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="labelOne" text="Nadać paczkę" textAlignment="CENTER" visible="false" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="244.0" prefWidth="250.0">
+               <children>
+                  <ImageView fx:id="imageTwo" fitHeight="150.0" fitWidth="150.0" onMouseExited="#clearMessages" onMouseMoved="#messageTwo" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@list%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="labelTwo" prefWidth="194.0" text="Przejżeć historię" textAlignment="CENTER" visible="false" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets bottom="10.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="300.0" prefWidth="250.0">
+               <children>
+                  <ImageView fx:id="imageThree" fitHeight="150.0" fitWidth="150.0" onMouseExited="#clearMessages" onMouseMoved="#messageThree" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@loupe.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="labelThree" text="Wyszukać paczkę" textAlignment="CENTER" visible="false" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
